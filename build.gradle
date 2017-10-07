@@ -1,0 +1,17 @@
+group 'co.java.web.demo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.9'
+    providedCompile 'javax:javaee-api:7.0'
+    providedCompile 'org.hibernate:hibernate-core:5.2.10.Final'
+}
